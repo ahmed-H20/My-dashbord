@@ -25,9 +25,11 @@ body{
 }
 
 .header .search input{
-    height: 20px;
+    height: 40px;
     flex-grow: 1;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #d4d4d8;
 }
 
 .header .profile-container{
@@ -35,6 +37,10 @@ body{
     justify-content: center;
     align-items: center;
     gap:0 30px;
+}
+
+.header .profile-container #user-im{
+    border-radius: 50%;
 }
 
 .header .profile-container #user-img{
@@ -60,8 +66,20 @@ body{
     margin-top: 0;
 }
 
-.header .btns-conainer{
-    
+.header .btns-container{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    justify-content: center;
+}
+
+.header .btns-container button{
+    border: none;
+    background-color: #38bdf8;
+    padding: 15px 50px;
+    color: #f0f9ff;
+    border-radius: 30px;
+    font-size: 20px;
 }
 
 .main{
