@@ -82,13 +82,73 @@ body{
     font-size: 20px;
 }
 
-.myprojects{
-    
-}
 .main{
-    background-color: blue;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr minmax(auto, 1fr);
+    padding: 30px;
+    background-color: #d4d4d8;
+    gap: 50px;
+}
+
+.myprojects .content{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto 1fr;
+    gap: 50px 30px;
+}
+
+.card{
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-left: 10px solid #F0B429;
+}
+
+.exercise{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card p,
+.content ul li p{
+    font-weight: 300;
+}
+
+.javascript-exercises .content,
+.css-exercises .content{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.javascript-exercises .content ul,
+.css-exercises .content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+}
+
+.content ul li{
+    margin: 20px 0;
+}
+
+
+.content ul li h4,p{
+    margin: 0;
+}
+
+.border{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
 }
 
 .sidebar{
