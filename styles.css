@@ -159,10 +159,20 @@ body{
     flex-direction: column;
     gap: 30px;
 }
+.sidebar .dashboard{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+.sidebar .dashboard-img{
+    height: 50px;
+    width: 50px;
+}
 
 .sidebar h3{
-    text-align: center;
     font-size: 30px;
+    display: inline;
 }
 .sidebar ul{
     display: flex;
@@ -176,12 +186,14 @@ body{
     list-style-type: none;
 }
 
-.sidebar > img, p{
+.sidebar p{
     display: inline;
+    font-size: 25px;
 }
 
 .sidebar img{
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    display: inline;
 }
 
